@@ -1,26 +1,29 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: rgb(198, 245, 245);
+    background-color: rgba(195, 230, 235, 0.829);
 }
 
-h1 {
+ h1 {
     font-size: 2.5em;
     margin: 20px 0;
     color: red; 
     text-align: center; 
 }
 
-h2 {
+ h2 {
     font-size: 1.0em;
     margin: 20px 0;
-    color: rgb(53, 53, 240); 
+    color: black; 
     text-align: left; 
+    align-items: center;
+    text-align: center;
 }
 
-span {
+ span {
     font-size: 1.0em;
     margin: 20px 0;
     color: rgb(63, 238, 92); 
@@ -30,7 +33,7 @@ span {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -44,9 +47,10 @@ span {
 }
 
 .gallery-item img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     display: block;
+    margin: 0 auto;
 }
 
 .gallery-item p {
