@@ -1,13 +1,13 @@
 body{
-    background: url('fond.jpg');
+    background: rgb(216, 203, 203);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-@media(max-width:991px){
+@media(max-width:651px){
     .sidebar{
-        background-color: rgb(31, 175, 175);
+        background-color: rgb(208, 219, 219);
         backdrop-filter: blur(10px);
     }
 }
@@ -47,6 +47,7 @@ body{
     color: blue;
     text-decoration: none;
     font-weight: 600;
+    align-items: center;
 }
 
 
@@ -71,37 +72,27 @@ body{
 }
 
 
-
-#home {
-width: 40%;
+main{
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
 }
-#home h1 {
-font-size: 35px;
-margin-bottom: 10px;
+main   span{
+    color: #00abf0;
+    margin-bottom: 10px;
 }
-#home h1  span {
-color:  blue;
+main    h2{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
 }
-#home h1  p {
-margin-bottom: 30px;
-color: #999;
-font-size: 13px;
-}
-#home a {
-background-color:red ;
-padding: 8px   20px;
-font-size: 14px;
-color: #fff;
-transition: 0.5s;
-}
-#home a:hover {
-background-color: #000;
-}
-
 
 .Home-content  .btn-box  {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 345px;
     height: 50px;
 }
@@ -113,8 +104,7 @@ background-color: #000;
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #00abf0;
-    border: 2px solid  #00abf0;
+    background: #00abf0; 
     border-radius: 8px;
     font-size: 19px;
     color: #081b29;
@@ -150,7 +140,7 @@ background-color: #000;
     left: 0;
     width: 0;
     height: 100%;
-    background: black;
+    background:rgb(29, 29, 31);
     z-index: -1;
     transition: .5s;
 }
