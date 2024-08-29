@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(198, 245, 245);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: red; 
+    text-align: center; 
+}
+
+h2 {
+    font-size: 1.0em;
+    margin: 20px 0;
+    color: rgb(53, 53, 240); 
+    text-align: left; 
+}
+
+span {
+    font-size: 1.0em;
+    margin: 20px 0;
+    color: rgb(63, 238, 92); 
+    text-align: left; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 10px); 
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden; 
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease; 
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    margin: 5px 0 0;
+}
+
+.order-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #0056b3;
+}
+
+.gallery-item:focus-within {
+    border-color: rgb(35, 207, 250); 
+}
+
+.btn-box    a   {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid  #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transform: .5s;
+}
+
+.btn-box    a:hover {
+    color: #00abf0;
+}
+
+.btn-box    a:nth-child(2)  {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box    a:nth-child(2):hover  {
+    color: #081b29;
+}
+
+.btn-box    a:nth-child(2):before   {
+    background: #00abf0;
+}
+
+.btn-box    a::before   {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    z-index: -1;
+    transition: .5s;
+}
+.btn-box    a:hover:before  {
+    width: 100%;
+
+}
